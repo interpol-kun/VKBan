@@ -1,0 +1,577 @@
+/*CSS code for the Banhammer styling*/
+.button{
+    background: none;
+    background-color: #5e81a8;
+    border: 0;
+    border-radius: 2px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 9;
+	color: white;
+}
+.button:hover{
+	background-color: #5c8ec4;
+}
+.button label{
+	color: white;
+}
+
+.white-pan{
+	background: none;
+	background-color: #ffffff;
+	border-radius: 3px;
+	border: 1px solid #d4d6da;
+    border-width: 1px;
+}
+
+.grey-pan{
+	background-color: #edeef0;
+}
+
+.login-text{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 11;
+}
+
+.aware-pan{
+	background-color: #fff6eb;
+	border: solid 1px;
+	border-color: #f2d0a9;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 9;
+	color: black;
+}
+
+.font-roboto{
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	color: black;
+}
+.username-label{
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 9;
+}
+
+.vk-pan{
+	background-color: #5e81a8;
+}
+
+.vk-logo{
+	background-image: url("https://pp.vk.me/c633925/v633925026/19281/zksQEhC289c.jpg");
+}
+
+.tooltip-btn{
+	background: none;
+	border: 0;
+    border-radius: 2px;
+}
+
+.entry {
+  min-height: 22px;
+  border: 1px solid;
+  padding: 2px 8px;
+  caret-color: currentColor;
+  border-radius: 3px;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  color: #5c616c;
+  border-color: #cfd6e6;
+  background-color: #ffffff; }
+  .entry.search {
+    border-radius: 20px; }
+  .entry image {
+    color: #7d8189; }
+    .entry image.left {
+      padding-left: 0;
+      padding-right: 5px; }
+    .entry image.right {
+      padding-right: 0;
+      padding-left: 5px; }
+  .entry.flat, entry.flat:focus {
+    min-height: 0;
+    padding: 2px;
+    background-image: none;
+    border-color: transparent;
+    border-radius: 0; }
+  .entry:focus {
+    background-clip: border-box;
+    color: #5c616c;
+    border-color: #5294e2;
+    background-color: #ffffff; }
+  .entry:disabled {
+    color: rgba(92, 97, 108, 0.55);
+    border-color: rgba(207, 214, 230, 0.55);
+    background-color: rgba(255, 255, 255, 0.55); }
+  .entry.warning {
+    color: white;
+    border-color: #F27835;
+    background-color: #f7ae86; }
+    .entry.warning image {
+      color: white; }
+    .entry.warning:focus {
+      color: white;
+      background-color: #F27835;
+      box-shadow: none; }
+    .entry.warning selection, .entry.warning selection:focus {
+      background-color: white;
+      color: #F27835; }
+  .entry.error {
+    color: white;
+    border-color: #FC4138;
+    background-color: #fd8d88; }
+    .entry.error image {
+      color: white; }
+    .entry.error:focus {
+      color: white;
+      background-color: #FC4138;
+      box-shadow: none; }
+    .entry.error selection, .entry.error selection:focus {
+      background-color: white;
+      color: #FC4138; }
+  .entry.search-missing {
+    color: white;
+    border-color: #FC4138;
+    background-color: #fd8d88; }
+    .entry.search-missing image {
+      color: white; }
+    .entry.search-missing:focus {
+      color: white;
+      background-color: #FC4138;
+      box-shadow: none; }
+    .entry.search-missing selection, .entry.search-missing selection:focus {
+      background-color: white;
+      color: #FC4138; }
+  .entry:drop(active):focus, .entry:drop(active) {
+    border-color: #F08437;
+    box-shadow: none; }
+  .osd .entry {
+    color: #BAC3CF;
+    border-color: rgba(26, 28, 34, 0.35);
+    background-color: rgba(102, 109, 132, 0.35); }
+    .osd .entry image, .osd entry image:hover {
+      color: inherit; }
+    .osd .entry:focus {
+      color: #ffffff;
+      border-color: rgba(26, 28, 34, 0.35);
+      background-color: #5294e2; }
+    .osd .entry:disabled {
+      color: rgba(186, 195, 207, 0.55);
+      background-color: rgba(102, 109, 132, 0.2); }
+    .osd .entry selection:focus, .osd .entry selection {
+      color: #5294e2;
+      background-color: #ffffff; }
+  .entry progress {
+    margin: 0 -6px;
+    border-radius: 0;
+    border-width: 0 0 2px;
+    border-color: #5294e2;
+    border-style: solid;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none; 
+}
+
+/*.entry{
+	color: 919496;
+}*/
+
+.image {
+	border: 0;
+	background: transparent;
+	border-radius: 0;
+}
+
+.checkboxview{
+	border: 0;
+	border-radius: 0;
+}
+
+.check,
+check,
+treeview.check {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-unchecked.png"), url("checkbox-unchecked@2.png")); }
+
+.osd check, filechooser actionbar check {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-unchecked-dark.png"), url("checkbox-unchecked-dark@2.png")); }
+
+menuitem check:hover,
+.view check:selected, iconview check:selected,
+treeview.check:selected,
+row:selected check,
+infobar check {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-unchecked-selected.png"), url("checkbox-unchecked-selected@2.png")); }
+
+.check:disabled,
+check:disabled,
+treeview.check:disabled {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-unchecked-insensitive.png"), url("checkbox-unchecked-insensitive@2.png")); }
+
+.osd check:disabled, filechooser actionbar check:disabled {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-unchecked-insensitive-dark.png"), url("checkbox-unchecked-insensitive-dark@2.png")); }
+
+menuitem check:disabled:hover,
+.view check:disabled:selected, iconview check:disabled:selected,
+treeview.check:disabled:selected,
+row:selected check:disabled,
+infobar check:disabled {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-unchecked-insensitive-selected.png"), url("checkbox-unchecked-insensitive-selected@2.png")); }
+
+.check:indeterminate,
+check:indeterminate,
+treeview.check:indeterminate {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-mixed.png"), url("checkbox-mixed@2.png")); }
+
+.osd check:indeterminate, filechooser actionbar check:indeterminate {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-mixed-dark.png"), url("checkbox-mixed-dark@2.png")); }
+
+menuitem check:indeterminate:hover,
+.view check:indeterminate:selected, iconview check:indeterminate:selected,
+treeview.check:indeterminate:selected,
+row:selected check:indeterminate,
+infobar check:indeterminate {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-mixed-selected.png"), url("checkbox-mixed-selected@2.png")); }
+
+.check:indeterminate:disabled,
+check:indeterminate:disabled,
+treeview.check:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-mixed-insensitive.png"), url("checkbox-mixed-insensitive@2.png")); }
+
+.osd check:indeterminate:disabled, filechooser actionbar check:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-mixed-insensitive-dark.png"), url("checkbox-mixed-insensitive-dark@2.png")); }
+
+menuitem check:indeterminate:disabled:hover,
+.view check:indeterminate:disabled:selected, iconview check:indeterminate:disabled:selected,
+treeview.check:indeterminate:disabled:selected,
+row:selected check:indeterminate:disabled,
+infobar check:indeterminate:disabled {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-mixed-insensitive-selected.png"), url("checkbox-mixed-insensitive-selected@2.png")); }
+
+.check:checked,
+check:checked,
+treeview.check:checked {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-checked.png"), url("checkbox-checked@2.png")); }
+
+.osd check:checked, filechooser actionbar check:checked {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-checked-dark.png"), url("checkbox-checked-dark@2.png")); }
+
+menuitem check:checked:hover,
+.view check:checked:selected, iconview check:checked:selected,
+treeview.check:checked:selected,
+row:selected check:checked,
+infobar check:checked {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-checked-selected.png"), url("checkbox-checked-selected@2.png")); }
+
+.check:checked:disabled,
+check:checked:disabled,
+treeview.check:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-checked-insensitive.png"), url("checkbox-checked-insensitive@2.png")); }
+
+.osd check:checked:disabled, filechooser actionbar check:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-checked-insensitive-dark.png"), url("checkbox-checked-insensitive-dark@2.png")); }
+
+menuitem check:checked:disabled:hover,
+.view check:checked:disabled:selected, iconview check:checked:disabled:selected,
+treeview.check:checked:disabled:selected,
+row:selected check:checked:disabled,
+infobar check:checked:disabled {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-checked-insensitive-selected.png"), url("checkbox-checked-insensitive-selected@2.png")); }
+
+.view.content-view.check:not(list), iconview.content-view.check:not(list) {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-selectionmode.png"), url("checkbox-selectionmode@2.png"));
+  background-color: transparent; }
+
+.view.content-view.check:checked:not(list), iconview.content-view.check:checked:not(list) {
+  -gtk-icon-source: -gtk-scaled(url("checkbox-checked-selectionmode.png"), url("checkbox-checked-selectionmode@2.png"));
+  background-color: transparent; }
+
+tooltip {
+
+  border-radius: 1px;
+  border: 1 solid #d4d6da;
+  box-shadow: 0 0 1px rgba(0,0,0,0.5); }
+  tooltip.background {
+  	color: black;
+    background-color: white;
+    background-clip: padding-box; }
+    tooltip.background label {
+      font-family: 'Roboto', sans-serif;
+	  font-weight: normal;
+	  font-size: 9;
+      color: black;
+      padding: 4px; }
+  tooltip decoration {
+    background-color: transparent; }
+  tooltip * {
+    background-color: transparent;
+    color: #BAC3CF; 
+}
+
+
+.right-menu-button{
+	border: 0 solid;
+	background-color: white;
+	color: #2a5885;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 9;
+	border-radius: 0;
+}
+
+.right-menu-button:hover{
+	background-color: #f0f2f5;
+}
+
+.right-menu-button:checked{
+	background-color: #f0f2f5;
+	border-left: 2 solid #6285af;
+}
+
+.no-border{
+	border: 0 solid;
+}
+
+@keyframes spin {
+  to { -gtk-icon-transform: rotate(1turn); }
+}
+
+.spinner {
+  animation-name: spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.filter-params-header{
+	background-color: #FAFBFC;
+	border-bottom: 1px solid #d4d6da;;
+}
+
+.filter-params-text{
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 11;
+	color: black;
+}
+
+.combobox{
+	background: none;
+	background-color: #ffffff;
+
+	border: 1px solid #d4d6da;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(212, 214, 218);
+}
+.combobox.button{
+	border: 0 solid;
+	border-width: 0;
+	background-color: red;
+}
+
+.menu-headers-text{
+	color: #808080;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 10;
+}
+
+.line{
+	border-bottom: 1 solid #d4d6da;
+}
+
+.blue-text{
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 9;
+	color: #2a5885 ;
+}
+
+.filler-text{
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 9;
+	color: #919496 ;
+}
+
+.entry-square {
+  min-height: 22px;
+  border: 1px solid;
+  padding: 2px 8px;
+  caret-color: currentColor;
+  border-radius: 0px;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  color: #5c616c;
+  border-color: #cfd6e6;
+  background-color: #ffffff; }
+  entry-square.search {
+    border-radius: 20px; }
+  entry-square image {
+    color: #7d8189; }
+    entry-square image.left {
+      padding-left: 0;
+      padding-right: 5px; }
+    entry-square image.right {
+      padding-right: 0;
+      padding-left: 5px; }
+  entry-square.flat, entry.flat:focus {
+    min-height: 0;
+    padding: 2px;
+    background-image: none;
+    border-color: transparent;
+    border-radius: 0; }
+  entry-square:focus {
+    background-clip: border-box;
+    color: #5c616c;
+    border-color: #5294e2;
+    background-color: #ffffff; }
+  entry-square:disabled {
+    color: rgba(92, 97, 108, 0.55);
+    border-color: rgba(207, 214, 230, 0.55);
+    background-color: rgba(255, 255, 255, 0.55); }
+  entry-square.warning {
+    color: white;
+    border-color: #F27835;
+    background-color: #f7ae86; }
+    entry-square.warning image {
+      color: white; }
+    entry-square.warning:focus {
+      color: white;
+      background-color: #F27835;
+      box-shadow: none; }
+    entry-square.warning selection, entry.warning selection:focus {
+      background-color: white;
+      color: #F27835; }
+  entry-square.error {
+    color: white;
+    border-color: #FC4138;
+    background-color: #fd8d88; }
+    entry-square.error image {
+      color: white; }
+    entry-square.error:focus {
+      color: white;
+      background-color: #FC4138;
+      box-shadow: none; }
+    entry-square.error selection, entry.error selection:focus {
+      background-color: white;
+      color: #FC4138; }
+  entry-square.search-missing {
+    color: white;
+    border-color: #FC4138;
+    background-color: #fd8d88; }
+    entry-square.search-missing image {
+      color: white; }
+    entry-square.search-missing:focus {
+      color: white;
+      background-color: #FC4138;
+      box-shadow: none; }
+    entry-square.search-missing selection, entry.search-missing selection:focus {
+      background-color: white;
+      color: #FC4138; }
+  entry-square:drop(active):focus, entry:drop(active) {
+    border-color: #F08437;
+    box-shadow: none; }
+  .osd entry-square {
+    color: #BAC3CF;
+    border-color: rgba(26, 28, 34, 0.35);
+    background-color: rgba(102, 109, 132, 0.35); }
+    .osd entry-square image, .osd entry image:hover {
+      color: inherit; }
+    .osd entry-square:focus {
+      color: #ffffff;
+      border-color: rgba(26, 28, 34, 0.35);
+      background-color: #5294e2; }
+    .osd entry-square:disabled {
+      color: rgba(186, 195, 207, 0.55);
+      background-color: rgba(102, 109, 132, 0.2); }
+    .osd entry-square selection:focus, .osd entry selection {
+      color: #5294e2;
+      background-color: #ffffff; }
+  entry-square progress {
+    margin: 0 -6px;
+    border-radius: 0;
+    border-width: 0 0 2px;
+    border-color: #5294e2;
+    border-style: solid;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none; 
+}
+
+.block-params-text{
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 9;
+	color: black;
+}
+
+.community-header{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 9;
+  color: #2a5885;
+}
+.community-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 9;
+  color: #656565;
+}
+
+.community-row:selected {
+    background: #edeef0;
+}
+
+.stack-switcher > button {
+    border: 0 solid;
+    background-color: white;
+    border-radius: 0; }
+    .stack-switcher > button > label {
+      color: #2a5885;
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
+      font-size: 9; 
+      padding-left: 0px;}
+    .stack-switcher > button > image {
+      
+      }
+    .stack-switcher > button.text-button {
+      padding: 5;
+      padding-left: 0;
+      }
+    .stack-switcher > button.image-button {
+      padding-left: 2px;
+      padding-right: 2px; }
+    .stack-switcher > button.needs-attention:active > label, .stack-switcher > button.needs-attention:active > image, .stack-switcher > button.needs-attention:checked > label, .stack-switcher > button.needs-attention:checked > image {
+      animation: none;
+      background-image: none; }
+  .stack-switcher > button.needs-attention > label, .stack-switcher > button.needs-attention > image, button stacksidebar row.needs-attention > label, stacksidebar button row.needs-attention > label {
+    animation: needs_attention 150ms ease-in;
+    background-image: -gtk-gradient(radial, center center, 0, center center, 0.5, to(#5294e2), to(transparent));
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+    background-position: right 3px, right 4px; }
+    .stack-switcher > button.needs-attention > label:dir(rtl), .stack-switcher > button.needs-attention > image:dir(rtl), button stacksidebar row.needs-attention > label:dir(rtl), stacksidebar button row.needs-attention > label:dir(rtl) {
+      background-position: left 3px, left 4px; }
+  button.font separator, button.file separator {
+    background-color: transparent; }
+  .inline-toolbar button, .inline-toolbar button:backdrop {
+    border-radius: 2px;
+    border-width: 1px; }
+
+.stack-switcher > button:checked{
+  background-color: #f0f2f5;
+  border-left: 2 solid #6285af;
+}
+
+.stack-switcher > button:hover{
+  background-color: #f0f2f5;
+}
+
+.invisible-button{
+  background-color: transparent;
+  color: transparent;
+}

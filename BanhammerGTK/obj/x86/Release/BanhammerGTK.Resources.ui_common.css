@@ -1,0 +1,43 @@
+.button{
+    background: none;
+    background-color: #5e81a8;
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+}
+
+.white-pan{
+	background: none;
+	background-color: #ffffff;
+
+	border-top: 1px solid #d4d6da;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: rgb(212, 214, 218);
+
+	border-bottom: 1px solid #d4d6da;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(212, 214, 218);
+
+    border-left: 1px solid #d4d6da;
+    border-left: 1px;
+    border-left-style: solid;
+    border-left-color: rgb(212, 214, 218);
+
+    border-right: 1px solid #d4d6da;
+    border-right: 1px;
+    border-right-style: solid;
+    border-right-color: rgb(212, 214, 218);
+}
+
+.grey-pan{
+	background-color: #edeef0;
+}
+
+.login-text{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 11;
+}

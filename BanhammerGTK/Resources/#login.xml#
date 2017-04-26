@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.20.0 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <!-- interface-local-resource-path ../Resources/icons -->
+  <!-- interface-css-provider-path ui_common.css -->
+  <object class="GtkWindow" id="window">
+    <property name="width_request">800</property>
+    <property name="height_request">500</property>
+    <property name="visible">True</property>
+    <property name="can_focus">False</property>
+    <property name="window_position">center</property>
+    <property name="icon_name">format-text-bold</property>
+    <child>
+      <object class="GtkLayout" id="loginlayout">
+        <property name="width_request">-1</property>
+        <property name="height_request">-1</property>
+        <property name="visible">True</property>
+        <property name="can_focus">False</property>
+        <property name="hexpand">True</property>
+        <property name="vexpand">True</property>
+        <property name="hscroll_policy">natural</property>
+        <property name="vscroll_policy">natural</property>
+        <property name="width">20</property>
+        <property name="height">20</property>
+        <child>
+          <object class="GtkLabel" id="grey-background">
+            <property name="name">gray_background</property>
+            <property name="width_request">800</property>
+            <property name="height_request">500</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <style>
+              <class name="grey-pan"/>
+            </style>
+          </object>
+        </child>
+        <child>
+          <object class="GtkLabel" id="white-background">
+            <property name="width_request">741</property>
+            <property name="height_request">273</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <style>
+              <class name="white-pan"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">118</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="email">
+            <property name="width_request">286</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="tooltip_text" translatable="yes">e-mail</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="placeholder_text" translatable="yes">email</property>
+            <property name="input_purpose">email</property>
+          </object>
+          <packing>
+            <property name="x">269</property>
+            <property name="y">196</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="password">
+            <property name="width_request">286</property>
+            <property name="height_request">32</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="halign">center</property>
+            <property name="valign">center</property>
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <property name="visibility">False</property>
+            <property name="invisible_char">●</property>
+            <property name="placeholder_text" translatable="yes">Пароль</property>
+            <property name="input_purpose">password</property>
+          </object>
+          <packing>
+            <property name="x">269</property>
+            <property name="y">240</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="login">
+            <property name="label" translatable="yes">Войти</property>
+            <property name="width_request">286</property>
+            <property name="height_request">28</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <style>
+              <class name="button"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">269</property>
+            <property name="y">315</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkCheckButton" id="remember-me">
+            <property name="label" translatable="yes">Не запоминать</property>
+            <property name="width_request">138</property>
+            <property name="height_request">23</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">False</property>
+            <property name="draw_indicator">True</property>
+            <style>
+              <class name="font-roboto"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">266</property>
+            <property name="y">284</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="login-text">
+            <property name="width_request">133</property>
+            <property name="height_request">37</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Вход</property>
+            <style>
+              <class name="login-text"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">338</property>
+            <property name="y">136</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="aware-text">
+            <property name="width_request">740</property>
+            <property name="height_request">44</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">Приложение не является официальным</property>
+            <style>
+              <class name="aware-pan"/>
+            </style>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">55</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="VK-panel">
+            <property name="width_request">800</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <style>
+              <class name="vk-pan"/>
+            </style>
+          </object>
+        </child>
+        <child>
+          <object class="GtkImage">
+            <property name="width_request">187</property>
+            <property name="height_request">34</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="pixbuf">logo.png</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

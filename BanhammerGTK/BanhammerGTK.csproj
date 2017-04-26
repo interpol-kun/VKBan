@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{A063CF13-94BE-456F-A057-D5767CA8E971}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BanhammerGTK</RootNamespace>
+    <AssemblyName>BanhammerGTK</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\gtk-sharp-3.3.22.6.4\build\net40\gtk-sharp-3.targets" Condition="Exists('..\packages\gtk-sharp-3.3.22.6.4\build\net40\gtk-sharp-3.targets')" />
+  <Import Project="..\packages\Xwt.Gtk3.0.2.5\build\Xwt.Gtk3.props" Condition="Exists('..\packages\Xwt.Gtk3.0.2.5\build\Xwt.Gtk3.props')" />
+  <Import Project="..\packages\Xwt.Gtk.0.2.5\build\Xwt.Gtk.props" Condition="Exists('..\packages\Xwt.Gtk.0.2.5\build\Xwt.Gtk.props')" />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="atk-sharp">
+      <HintPath>..\packages\gtk-sharp-3.3.22.6.4\lib\net40\atk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="cairo-sharp">
+      <HintPath>..\packages\gtk-sharp-3.3.22.6.4\lib\net40\cairo-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gdk-sharp">
+      <HintPath>..\packages\gtk-sharp-3.3.22.6.4\lib\net40\gdk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gio-sharp">
+      <HintPath>..\packages\gtk-sharp-3.3.22.6.4\lib\net40\gio-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="glib-sharp">
+      <HintPath>..\packages\gtk-sharp-3.3.22.6.4\lib\net40\glib-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-sharp">
+      <HintPath>..\packages\gtk-sharp-3.3.22.6.4\lib\net40\gtk-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="pango-sharp">
+      <HintPath>..\packages\gtk-sharp-3.3.22.6.4\lib\net40\pango-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="gtk-dotnet">
+      <HintPath>..\packages\gtk-sharp-3.3.22.6.4\lib\net40\gtk-dotnet.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="VkNet">
+      <HintPath>packages\VkNet.1.25.0\lib\net40\VkNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.cs">
+      <DeployService-Deploy>True</DeployService-Deploy>
+      <DeployService-UseProjectRelativePath>True</DeployService-UseProjectRelativePath>
+      <LogicalName>ui_common</LogicalName>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\css\" />
+    <Folder Include="Resources\UI\" />
+    <Folder Include="Resources\icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\css\ui_common.css">
+      <DeployService-Deploy>True</DeployService-Deploy>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UI\login.xml">
+      <DeployService-Deploy>True</DeployService-Deploy>
+      <LogicalName>login</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\icons\community_34.png" />
+    <EmbeddedResource Include="Resources\icons\community_100.png" />
+    <EmbeddedResource Include="Resources\icons\info.png" />
+    <EmbeddedResource Include="Resources\icons\logo.png">
+      <LogicalName>vklogo</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\icons\msg_error.png" />
+    <EmbeddedResource Include="Resources\icons\msg_ok.png" />
+    <EmbeddedResource Include="Resources\icons\msg_warning.png">
+      <LogicalName>msg_warning</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UI\login_new.xml">
+      <LogicalName>login_new</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\css\checkbox-checked-dark.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-dark%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-insensitive-dark.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-insensitive-dark%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-insensitive-selected.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-insensitive-selected%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-insensitive.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-insensitive%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-selected.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-selected%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-selectionmode-dark.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-selectionmode-dark%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-selectionmode.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked-selectionmode%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-checked%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-mixed-dark.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-mixed-dark%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-mixed-insensitive-dark.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-mixed-insensitive-dark%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-mixed-insensitive.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-mixed-insensitive%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-mixed.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-mixed%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-unchecked-dark.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-unchecked-dark%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-unchecked-insensitive.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-unchecked-insensitive%402.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-unchecked.png" />
+    <EmbeddedResource Include="Resources\css\checkbox-unchecked%402.png" />
+  </ItemGroup>
+</Project>
