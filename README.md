@@ -7,5 +7,5 @@ VK API для [C#](https://github.com/vknet/vk)
 ## Экран входа
 ![login](http://i.imgur.com/cnGuVIk.png)
 ## Множество параметров для блокировки
-![option-list](https://imgur.com/ZBVzLIh)
-![option-list_2](https://imgur.com/NPIm7kW)
+![option-list](https://i.imgur.com/NPIm7kW.png)
+![option-list_2](https://i.imgur.com/ZBVzLIh.png)
